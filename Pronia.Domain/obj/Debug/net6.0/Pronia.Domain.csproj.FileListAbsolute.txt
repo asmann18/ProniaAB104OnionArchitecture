@@ -1,0 +1,11 @@
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\bin\Debug\net6.0\Pronia.Domain.deps.json
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\bin\Debug\net6.0\Pronia.Domain.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\bin\Debug\net6.0\Pronia.Domain.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.AssemblyInfo.cs
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\refint\Pronia.Domain.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\ref\Pronia.Domain.dll

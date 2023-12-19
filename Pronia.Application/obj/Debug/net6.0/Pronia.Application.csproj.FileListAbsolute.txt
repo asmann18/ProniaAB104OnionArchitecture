@@ -1,0 +1,15 @@
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\bin\Debug\net6.0\Pronia.Application.deps.json
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\bin\Debug\net6.0\Pronia.Application.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\bin\Debug\net6.0\Pronia.Application.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\bin\Debug\net6.0\Pronia.Domain.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\bin\Debug\net6.0\Pronia.Domain.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.AssemblyInfo.cs
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.csproj.CopyComplete
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\refint\Pronia.Application.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\Pronia.Application.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Application\obj\Debug\net6.0\ref\Pronia.Application.dll

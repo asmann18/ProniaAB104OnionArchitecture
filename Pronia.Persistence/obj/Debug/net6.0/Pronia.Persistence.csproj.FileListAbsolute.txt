@@ -1,0 +1,17 @@
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.AssemblyInfo.cs
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Persistence.deps.json
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Persistence.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Persistence.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Application.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Domain.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Application.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Domain.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.csproj.CopyComplete
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\refint\Pronia.Persistence.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.pdb
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\ref\Pronia.Persistence.dll
