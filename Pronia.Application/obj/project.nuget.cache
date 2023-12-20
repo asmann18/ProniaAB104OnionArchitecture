@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kWAtovlhHkoZQXI5rsulvKAQdNRBEBt4Q6g4z6fT/VrdmAt3bXuoziEpDpwbzBPas3i6XypwOSXrZ9dX+C56Yw==",
+  "dgSpecHash": "N1V53urmw2v49k1aEHa5VfFwTMZUh2zih5pEPaCX39E/JxT6IGSWklEDssdFkQmqmZAd/EJku1/cbFuyTXeDBg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Application\\Pronia.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

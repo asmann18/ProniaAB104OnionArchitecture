@@ -16,4 +16,5 @@ public class AppDbContext:DbContext
         base.OnModelCreating(modelBuilder);
     }
     public DbSet<Category> Categories { get; set; }
+    public DbSet<Tag> Tags { get; set; }
 }

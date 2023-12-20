@@ -15,3 +15,5 @@ C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pr
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\refint\Pronia.Persistence.dll
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.pdb
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\ref\Pronia.Persistence.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\bin\Debug\net6.0\Pronia.Persistence.runtimeconfig.json
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Persistence\obj\Debug\net6.0\Pronia.Persistence.genruntimeconfig.cache
