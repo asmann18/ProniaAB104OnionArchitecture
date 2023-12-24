@@ -76,3 +76,6 @@ C:\Users\DELL\source\repos\ProniaAB104New\Pestkit.Presentation\obj\Debug\net6.0\
 C:\Users\DELL\source\repos\ProniaAB104New\Pestkit.Presentation\obj\Debug\net6.0\Pestkit.Presentation.pdb
 C:\Users\DELL\source\repos\ProniaAB104New\Pestkit.Presentation\obj\Debug\net6.0\Pestkit.Presentation.genruntimeconfig.cache
 C:\Users\DELL\source\repos\ProniaAB104New\Pestkit.Presentation\obj\Debug\net6.0\ref\Pestkit.Presentation.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pestkit.Presentation\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pestkit.Presentation\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pestkit.Presentation\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

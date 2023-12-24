@@ -11,5 +11,6 @@ public class TagAutoMapper:Profile
         CreateMap<Tag, TagPostDto>().ReverseMap();
         CreateMap<Tag, TagPutDto>().ReverseMap();
         CreateMap<Tag, TagGetDto>().ReverseMap();
+        CreateMap<Tag, TagRelationDto>().ReverseMap();
     }
 }

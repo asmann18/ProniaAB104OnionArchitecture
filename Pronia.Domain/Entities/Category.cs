@@ -2,7 +2,7 @@
 
 namespace Pronia.Domain.Entities;
 
-public class Category:BaseNamebleEntity
+public class Category:BaseAuditableEntity
 {
 
 }

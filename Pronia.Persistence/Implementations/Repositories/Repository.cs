@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pronia.Application.Abstractions.Repositories;
+using Pronia.Domain.Entities.Common;
 using Pronia.Persistence.Contexts;
 using System.Linq.Expressions;
 
@@ -21,16 +22,30 @@ public class Repository<T> : IRepository<T> where T : class, new()
 
     public void Delete(T entity)
     {
-        _context.Set<T>().Remove(entity);
+        if (entity is BaseAuditableEntity auditableEntity)
+        {
+            auditableEntity.IsDeleted = true;
+        }
+        else
+        {
+            _context.Set<T>().Remove(entity);
+        }
     }
 
-    public IQueryable<T> GetAllAsync(bool isTracking = false, params string[] includes)
+    public IQueryable<T> GetAll( params string[] includes)
     {
+        var query = _context.Set<T>().AsQueryable();
+        foreach (var include in includes)
+        {
+            query = query.Include(include);
+        }
+        return query;
 
-        IQueryable<T> entities = _context.Set<T>();
-        if (!isTracking)
-            entities.AsNoTracking();
-        return entities;
+        //if (!isTracking)
+        //{
+        //    entities = entities.AsNoTracking();
+        //}
+
     }
 
 

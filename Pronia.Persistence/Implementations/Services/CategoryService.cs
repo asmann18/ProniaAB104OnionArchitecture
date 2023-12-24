@@ -41,14 +41,14 @@ public class CategoryService:ICategoryService
 
     public async Task<List<CategoryGetDto>> GetAllAsync()
     {
-        var categories = await _categoryRepository.OrderBy((_categoryRepository.GetAllAsync()), x => x.Id).ToListAsync();
+        var categories = await _categoryRepository.OrderBy((_categoryRepository.GetAll()), x => x.Id).ToListAsync();
         var dtos = _mapper.Map<List<CategoryGetDto>>(categories);
         return dtos;
     }
 
     public async Task<List<CategoryGetDto>> GetAllAsync(int limit, int page)
     {
-        var categories = await _categoryRepository.Paginate((_categoryRepository.GetAllAsync()), limit, page).ToListAsync();
+        var categories = await _categoryRepository.Paginate((_categoryRepository.GetAll()), limit, page).ToListAsync();
         var dtos = _mapper.Map<List<CategoryGetDto>>(categories);
         return dtos;
     }
@@ -78,3 +78,4 @@ public class CategoryService:ICategoryService
     }
 
 }
+    

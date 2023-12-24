@@ -11,5 +11,6 @@ public class CategoryAutoMapper:Profile
         CreateMap<Category, CategoryGetDto>().ReverseMap();
         CreateMap<Category, CategoryPutDto>().ReverseMap();
         CreateMap<Category, CategoryPostDto>().ReverseMap();
+        CreateMap<Category, CategoryRelationDto>().ReverseMap();
     }
 }

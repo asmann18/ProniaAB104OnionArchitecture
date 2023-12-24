@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "s67+HttdI20vMkVZKVrDEWk+N4wyuB8vHxVutlPbxEvk/zEedYt6dT05wMsAhgq0ULDmuiPYAP28BI3trGmxRw==",
+  "dgSpecHash": "tutDBiHUZXBZ0CFJZzYUObcAZzX3xFqltzY+ymnN/NwXmiwL01yhE3gdplegAqiGraY4K1rLuouckNzhZtc2Cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Infrastructure\\Pronia.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

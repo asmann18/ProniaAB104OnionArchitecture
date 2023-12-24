@@ -15,11 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pronia.Persistence", "Pronia.Persistence\Pronia.Persistence.csproj", "{5AF23C93-A019-4861-A332-12D5FFE690FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pronia.Infrastructure", "Pronia.Infrastructure\Pronia.Infrastructure.csproj", "{D0691FBF-9B93-4C36-9E0B-6212F13557C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pronia.Infrastructure", "Pronia.Infrastructure\Pronia.Infrastructure.csproj", "{D0691FBF-9B93-4C36-9E0B-6212F13557C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BBC78240-4EC2-402C-B3CB-9253C46DE91D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pestkit.Presentation", "Pestkit.Presentation\Pestkit.Presentation.csproj", "{120F554F-D78F-425D-9F08-1C2F9BDD1E9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pronia.Presentation", "Pestkit.Presentation\Pronia.Presentation.csproj", "{120F554F-D78F-425D-9F08-1C2F9BDD1E9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

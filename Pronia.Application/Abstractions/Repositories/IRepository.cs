@@ -4,7 +4,7 @@ namespace Pronia.Application.Abstractions.Repositories;
 
 public interface IRepository<T> where T : class, new()
 {
-    IQueryable<T> GetAllAsync(bool isTracking = false, params string[] includes);
+    IQueryable<T> GetAll( params string[] includes);
     IQueryable<T> OrderBy(IQueryable<T> query, Expression<Func<T, object>> expression);
     IQueryable<T> Paginate(IQueryable<T> query, int limit, int page = 1);
     IQueryable<T> GetFilteredAsync(Expression<Func<T, bool>> expression, params string[] includes);

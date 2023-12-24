@@ -40,14 +40,14 @@ public class TagService:ITagService
 
     public async Task<List<TagGetDto>> GetAllAsync()
     {
-        var tags = await _tagRepository.OrderBy(_tagRepository.GetAllAsync(), x => x.Id).ToListAsync();
+        var tags = await _tagRepository.OrderBy(_tagRepository.GetAll(), x => x.Id).ToListAsync();
      var dtos=_mapper.Map<List<TagGetDto>>(tags);
         return dtos;
     }
 
     public async Task<List<TagGetDto>> GetAllAsync(int limit, int page)
     {
-        var tags = await _tagRepository.Paginate(_tagRepository.GetAllAsync(), limit, page).ToListAsync();
+        var tags = await _tagRepository.Paginate(_tagRepository.GetAll(), limit, page).ToListAsync();
         var dtos = _mapper.Map<List<TagGetDto>>(tags);
         return dtos;
     }
