@@ -35,7 +35,7 @@ public class CategoryService:ICategoryService
         if (category is null)
             throw new CategoryNotFoundException();
 
-        _categoryRepository.Delete(category);
+        _categoryRepository.SoftDelete(category);
         await _categoryRepository.SaveAsync();
     }
 

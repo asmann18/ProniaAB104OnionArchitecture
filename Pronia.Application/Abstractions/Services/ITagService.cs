@@ -11,4 +11,5 @@ public interface ITagService
     Task CreateAsync(TagPostDto dto);
     Task UpdateAsync(TagPutDto dto);
     Task DeleteAsync(int id);
+    Task<bool> IsExistAsync(int id);
 }

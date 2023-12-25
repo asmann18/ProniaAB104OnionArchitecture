@@ -10,6 +10,8 @@ public class ProductAutoMapper:Profile
     {
         CreateMap<Product, ProductPostDto>().ReverseMap();
         CreateMap<Product, ProductPutDto>().ReverseMap();
-        CreateMap<Product, ProductGetDto>().ReverseMap();
+
+        CreateMap<Product, ProductGetDto>()
+                   .ForMember(dest => dest.TagIds, opt => opt.MapFrom(src => src.ProductTags.Select(pt => pt.TagId).ToList())).ReverseMap();
     }
 }

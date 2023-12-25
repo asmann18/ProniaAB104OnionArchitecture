@@ -20,48 +20,61 @@ public class Repository<T> : IRepository<T> where T : class, new()
         await _context.Set<T>().AddAsync(entity);
     }
 
-    public void Delete(T entity)
+    public void HardDelete(T entity)
     {
+
+        _context.Set<T>().Remove(entity);
+
+    }
+    public void SoftDelete(T entity)
+    {
+
         if (entity is BaseAuditableEntity auditableEntity)
         {
             auditableEntity.IsDeleted = true;
         }
-        else
+    }
+    public void Repair(T entity)
+    {
+
+        if (entity is BaseAuditableEntity auditableEntity)
         {
-            _context.Set<T>().Remove(entity);
+            auditableEntity.IsDeleted = false;
         }
     }
 
-    public IQueryable<T> GetAll( params string[] includes)
+    public IQueryable<T> GetAll(bool ignoreFilter=false,params string[] includes)
     {
         var query = _context.Set<T>().AsQueryable();
+
         foreach (var include in includes)
         {
             query = query.Include(include);
         }
+        if (ignoreFilter)
+            query=query.IgnoreQueryFilters();
+
         return query;
-
-        //if (!isTracking)
-        //{
-        //    entities = entities.AsNoTracking();
-        //}
-
     }
 
 
 
-    public IQueryable<T> GetFilteredAsync(Expression<Func<T, bool>> expression, params string[] includes)
+    public IQueryable<T> GetFiltered(Expression<Func<T, bool>> expression, bool ignoreFilter = false, params string[] includes)
     {
         var query = _context.Set<T>().Where(expression).AsQueryable();
         foreach (string include in includes)
         {
             query = query.Include(include);
         }
+        if(ignoreFilter)
+            query=query.IgnoreQueryFilters();
         return query;
     }
 
-    public async Task<bool> IsExistAsync(Expression<Func<T, bool>> expression)
+    public async Task<bool> IsExistAsync(Expression<Func<T, bool>> expression,bool ignoreFilter=false)
     {
+        if (ignoreFilter)
+            return await _context.Set<T>().IgnoreQueryFilters().AnyAsync(expression);
         return await _context.Set<T>().AnyAsync(expression);
     }
 
@@ -75,13 +88,15 @@ public class Repository<T> : IRepository<T> where T : class, new()
         _context.Update(entity);
     }
 
-    public async Task<T?> GetSingleAsync(Expression<Func<T, bool>> expression, params string[] includes)
+    public async Task<T?> GetSingleAsync(Expression<Func<T, bool>> expression,bool ignoreFilter=false, params string[] includes)
     {
         var query = _context.Set<T>().AsQueryable<T>();
         foreach (var include in includes)
         {
-            query.Include(include);
+            query=query.Include(include);
         }
+        if(ignoreFilter)
+            query=query.IgnoreQueryFilters();
         T? entity = await query.FirstOrDefaultAsync(expression);
         return entity;
     }

@@ -11,6 +11,6 @@ public class Product:BaseAuditableEntity
     public string SKU { get; set; }
     public int CategoryId { get; set; }
     public Category Category { get; set; }
-    public int TagId { get; set; }
-    public Tag Tag { get; set; }
+    public ICollection<ProductTag> ProductTags { get; set; }
+
 }

@@ -12,7 +12,6 @@ public record ProductGetDto
     public string SKU { get; init; }
     public int CategoryId { get; init; }
     public CategoryRelationDto Category{ get; init; }
-    public int TagId { get; init; }
-    public TagRelationDto Tag { get; init; }
+    public List<int> TagIds { get; set; }
 
 }

@@ -10,6 +10,6 @@ public record ProductPutDto
     public byte Rating { get; init; }
     public string SKU { get; init; }
     public int CategoryId { get; init; }
-    public int TagId { get; init; }
+    public List<int> TagIds { get; init; }
 
 }

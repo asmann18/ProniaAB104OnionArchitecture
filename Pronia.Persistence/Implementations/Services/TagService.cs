@@ -8,7 +8,7 @@ using Pronia.Persistence.Exceptions;
 
 namespace Pronia.Persistence.Implementations.Services;
 
-public class TagService:ITagService
+public class TagService : ITagService
 {
     private readonly ITagRepository _tagRepository;
     private readonly IMapper _mapper;
@@ -34,14 +34,14 @@ public class TagService:ITagService
         var tag = await _tagRepository.GetSingleAsync(x => x.Id == id);
         if (tag is null)
             throw new TagNotFoundException();
-        _tagRepository.Delete(tag);
+        _tagRepository.HardDelete(tag);
         await _tagRepository.SaveAsync();
     }
 
     public async Task<List<TagGetDto>> GetAllAsync()
     {
         var tags = await _tagRepository.OrderBy(_tagRepository.GetAll(), x => x.Id).ToListAsync();
-     var dtos=_mapper.Map<List<TagGetDto>>(tags);
+        var dtos = _mapper.Map<List<TagGetDto>>(tags);
         return dtos;
     }
 
@@ -62,6 +62,11 @@ public class TagService:ITagService
         return dto;
     }
 
+    public async Task<bool> IsExistAsync(int id)
+    {
+        return await _tagRepository.IsExistAsync(x => x.Id == id);  
+    }
+
     public async Task UpdateAsync(TagPutDto dto)
     {
         var existedTag = await _tagRepository.GetSingleAsync(x => x.Id == dto.Id);
@@ -72,7 +77,7 @@ public class TagService:ITagService
         if (isExist)
             throw new TagAlreadyExistException();
 
-        existedTag=_mapper.Map<TagPutDto,Tag>(dto,existedTag);
+        existedTag = _mapper.Map<TagPutDto, Tag>(dto, existedTag);
         _tagRepository.Update(existedTag);
         await _tagRepository.SaveAsync();
     }

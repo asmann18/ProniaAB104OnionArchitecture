@@ -16,7 +16,7 @@ public static class ServiceRegistration
 
     public static ModelBuilder AddBaseAuditableEntityQueryFilter(this ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Category>().HasQueryFilter(x => !x.IsDeleted);
+        modelBuilder.Entity<Product>().HasQueryFilter(x => !x.IsDeleted);
         return modelBuilder;
     }
 

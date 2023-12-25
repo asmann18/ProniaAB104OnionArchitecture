@@ -21,6 +21,13 @@ public class ProductsController : ControllerBase
 
         return StatusCode(StatusCodes.Status200OK, await _service.GetAllAsync());
     }
+    [HttpGet]
+    [Route("[action]")]
+    public async Task<IActionResult> GetDeletedProducts()
+    {
+
+        return StatusCode(StatusCodes.Status200OK, await _service.GetDeletedProducts());
+    }
 
     [HttpGet]
     [Route("{id}")]
@@ -29,13 +36,28 @@ public class ProductsController : ControllerBase
         return StatusCode(StatusCodes.Status200OK, await _service.GetAsync(id));
     }
     [HttpDelete]
-    [Route("{id}")]
-    public async Task<IActionResult> DeleteByIdAsync([FromRoute] int id)
+    [Route("softDelete/{id}")]
+    public async Task<IActionResult> SoftDeleteById([FromRoute] int id)
     {
-        await _service.DeleteAsync(id);
+        await _service.SoftDeleteAsync(id);
         return StatusCode(StatusCodes.Status204NoContent);
-
     }
+    [HttpDelete]
+    [Route("hardDelete/{id}")]
+    public async Task<IActionResult> HardDeleteById([FromRoute] int id)
+    {
+        await _service.HardDeleteAsync(id);
+        return StatusCode(StatusCodes.Status204NoContent);
+    }
+    [HttpDelete]
+    [Route("repairDelete/{id}")]
+    public async Task<IActionResult> RepairDeleteById([FromRoute] int id)
+    {
+        await _service.RepairDeleteAsync(id);
+        return StatusCode(StatusCodes.Status204NoContent);
+    }
+
+
     [HttpPut]
     public async Task<IActionResult> UpdateByIdAsync([FromBody] ProductPutDto productPutDto)
     {
