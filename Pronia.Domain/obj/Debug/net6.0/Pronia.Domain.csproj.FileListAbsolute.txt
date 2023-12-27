@@ -9,3 +9,4 @@ C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\refint\Pronia.Domain.dll
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.pdb
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\ref\Pronia.Domain.dll
+C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Domain\obj\Debug\net6.0\Pronia.Domain.csproj.AssemblyReference.cache

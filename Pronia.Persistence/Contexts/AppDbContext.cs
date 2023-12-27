@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Pronia.Domain.Entities;
-using Pronia.Domain.Entities.Common;
 using Pronia.Persistence.Interceptors;
 using Pronia.Persistence.ServiceRegistration;
 using System.Reflection;
@@ -8,7 +9,7 @@ using System.Reflection;
 namespace Pronia.Persistence.Contexts;
 
 
-public class AppDbContext:DbContext
+public class AppDbContext:IdentityDbContext<AppUser>
 {
     private readonly BaseEntityInterceptor _baseInterceptor;
     public AppDbContext(DbContextOptions<AppDbContext> options, BaseEntityInterceptor baseInterceptor) : base(options)
