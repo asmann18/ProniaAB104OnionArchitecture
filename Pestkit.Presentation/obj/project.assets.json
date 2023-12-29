@@ -1088,7 +1088,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Pronia.Persistence": "1.0.0"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.25",
+          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
+          "Pronia.Application": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Pronia.Infrastructure.dll": {}
@@ -2900,6 +2902,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Design >= 6.0.25",
       "Pronia.Infrastructure >= 1.0.0",
+      "Pronia.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2937,6 +2940,9 @@
           "projectReferences": {
             "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Infrastructure\\Pronia.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Infrastructure\\Pronia.Infrastructure.csproj"
+            },
+            "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Persistence\\Pronia.Persistence.csproj": {
+              "projectPath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Persistence\\Pronia.Persistence.csproj"
             }
           }
         }

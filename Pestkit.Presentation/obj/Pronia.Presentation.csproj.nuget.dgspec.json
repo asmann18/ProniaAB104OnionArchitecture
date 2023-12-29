@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Infrastructure\\Pronia.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Infrastructure\\Pronia.Infrastructure.csproj"
+              },
+              "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Persistence\\Pronia.Persistence.csproj": {
+                "projectPath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Persistence\\Pronia.Persistence.csproj"
               }
             }
           }
@@ -256,8 +259,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Persistence\\Pronia.Persistence.csproj": {
-                "projectPath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Persistence\\Pronia.Persistence.csproj"
+              "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Application\\Pronia.Application.csproj": {
+                "projectPath": "C:\\Users\\DELL\\source\\repos\\ProniaAB104New\\Pronia.Application\\Pronia.Application.csproj"
               }
             }
           }
@@ -271,6 +274,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "6.0.25",
           "Pronia.Infrastructure": "1.0.0",
+          "Pronia.Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -637,7 +638,9 @@
       },
       "Pronia.Infrastructure/1.0.0": {
         "dependencies": {
-          "Pronia.Persistence": "1.0.0"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.25",
+          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
+          "Pronia.Application": "1.0.0"
         },
         "runtime": {
           "Pronia.Infrastructure.dll": {}

@@ -1,7 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace Pronia.Persistence.Security.Encrypting;
+namespace Pronia.Infrastructure.Security.Encrypting;
 
 public static class SecurityKeyHelper
 {

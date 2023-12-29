@@ -27,8 +27,15 @@ namespace Pronia.Presentation.Controllers
         [Route("[action]")]
         public async Task<IActionResult> Login(AppUserLoginDto appUserLoginDto)
         {
-            await _service.Login(appUserLoginDto);
-            return NoContent();
+            
+            return Ok(await _service.Login(appUserLoginDto));
+        }
+        [HttpPost]
+        [Route("[action]")]
+        public async Task<IActionResult> RefreshLogin(string refreshToken)
+        {
+
+            return Ok(await _service.RefreshTokenLogin(refreshToken));
         }
     }
 }

@@ -3,11 +3,11 @@ using Microsoft.IdentityModel.Tokens;
 using Pronia.Application.Abstractions.Helper;
 using Pronia.Application.DTOs.TokenDtos;
 using Pronia.Domain.Entities;
-using Pronia.Persistence.Security.Encrypting;
+using Pronia.Infrastructure.Security.Encrypting;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace Pronia.Persistence.Security.JWT;
+namespace Pronia.Infrastructure.Security.JWT;
 
 
 public class JWTHelper : ITokenHelper
@@ -29,17 +29,25 @@ public class JWTHelper : ITokenHelper
         JwtSecurityToken jwtSecurityToken = new(jwtHeader, jwtPayload);
 
         return AccessTokenCreate(jwtSecurityToken);
-         
+
     }
 
     private AccessToken AccessTokenCreate(JwtSecurityToken jwtSecurityToken)
     {
         JwtSecurityTokenHandler jwtSecurityTokenHandler = new();
-        return new()
+        AccessToken token = new()
         {
             Token = jwtSecurityTokenHandler.WriteToken(jwtSecurityToken),
-            ExpiredDate = _expiresAt
+            ExpiredDate = _expiresAt,
+            RefreshToken=GenerateRefreshToken(),
+            RefreshTokenExpiredAt=_expiresAt.AddMinutes(15)
+
         };
+        return token;
+    }
+    private string GenerateRefreshToken()
+    {
+        return Guid.NewGuid().ToString();
     }
 
     private JwtPayload JwtPayloadCreate(List<Claim> claims)
@@ -53,9 +61,9 @@ public class JWTHelper : ITokenHelper
             );
     }
 
-    private static JwtHeader JwtHeaderCreate()
+    private JwtHeader JwtHeaderCreate()
     {
-        SecurityKey securityKey = SecurityKeyHelper.CreateSecurityKey("salam");
+        SecurityKey securityKey = SecurityKeyHelper.CreateSecurityKey(_tokenOptions.SecurityKey);
         SigningCredentials signingCredentials = SignInCredentialsHelper.CreateSigninCredentianals(securityKey);
         JwtHeader jwtHeader = new(signingCredentials);
         return jwtHeader;

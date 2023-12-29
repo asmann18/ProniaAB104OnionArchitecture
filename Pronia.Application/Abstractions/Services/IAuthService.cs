@@ -8,6 +8,6 @@ public interface IAuthService
 {
 
     Task Register(AppUserRegisterDto appUserRegisterDto);
-    Task<AccessToken> CreateToken(AppUser user);
     Task<AccessToken> Login(AppUserLoginDto appUserLoginDto);
+    Task<AccessToken> RefreshTokenLogin(string refreshToken);
 }

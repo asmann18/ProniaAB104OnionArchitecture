@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Pronia.Application.Abstractions.Services;
 using Pronia.Application.DTOs;
 
@@ -6,6 +7,8 @@ namespace Pestkit.Presentation.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize(AuthenticationSchemes ="Bearer")]
+
 public class CategoriesController : ControllerBase
 {
     private readonly ICategoryService _service;

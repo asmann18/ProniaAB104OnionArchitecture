@@ -1,19 +1,14 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Pronia.Application.Abstractions.Helper;
 using Pronia.Application.Abstractions.Repositories;
 using Pronia.Application.Abstractions.Services;
-using Pronia.Application.DTOs.TokenDtos;
 using Pronia.Domain.Entities;
 using Pronia.Persistence.Contexts;
 using Pronia.Persistence.Implementations.Repositories;
 using Pronia.Persistence.Implementations.Services;
 using Pronia.Persistence.Interceptors;
-using Pronia.Persistence.Security.Encrypting;
-using Pronia.Persistence.Security.JWT;
 
 namespace Pronia.Persistence.ServiceRegistration;
 
@@ -33,7 +28,6 @@ public static class ServiceRegistration
         AddIdentity(services);
         
         
-        AddJwtBearer(services, configuration);
         
         //Repositories
         AddRepositories(services);
@@ -48,24 +42,7 @@ public static class ServiceRegistration
         return services;
     }
 
-    private static void AddJwtBearer(IServiceCollection services, IConfiguration configuration)
-    {
-        TokenOptionDto tokenOptions = configuration.GetSection("TokenOptions").Get<TokenOptionDto>();
-        services.AddAuthentication(options => options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
-        {
-            opt.TokenValidationParameters = new()
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-
-                ValidIssuer = tokenOptions.Issuer,
-                ValidAudience = tokenOptions.Audience,
-                IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey),
-            };
-        });
-    }
+  
 
     private static void AddServices(IServiceCollection services)
     {
@@ -73,7 +50,6 @@ public static class ServiceRegistration
         services.AddScoped<ITagService, TagService>();
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<IAuthService, AuthService>();
-        services.AddScoped<ITokenHelper, JWTHelper>();
     }
 
     private static void AddRepositories(IServiceCollection services)

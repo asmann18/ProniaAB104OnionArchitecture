@@ -3,8 +3,6 @@ C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0\Pronia.Infrastructure.pdb
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0\Pronia.Application.dll
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0\Pronia.Domain.dll
-C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0\Pronia.Persistence.dll
-C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0\Pronia.Persistence.pdb
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0\Pronia.Application.pdb
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\bin\Debug\net6.0\Pronia.Domain.pdb
 C:\Users\DELL\source\repos\ProniaAB104New\Pronia.Infrastructure\obj\Debug\net6.0\Pronia.Infrastructure.csproj.AssemblyReference.cache
